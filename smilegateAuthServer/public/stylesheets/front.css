@@ -1,0 +1,25 @@
+body {
+    width: 99%;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(120, 120, 120, 0.1);
+}
+
+a, a:visited {
+    color: rgba(120, 120, 120, 0.8);
+}
+
+a:active {
+    color: rgba(80, 80, 80, 0.9);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    height: 768px;
+    background: #ffffff;
+    border-radius: 20px;
+}

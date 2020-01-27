@@ -1,0 +1,85 @@
+body {
+    width: 99%;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(120, 120, 120, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    height: 768px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.leftPage {
+    flex: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #2e48d9;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftPage #introTitle{
+    color: white;
+    font-weight: bold;
+}
+
+.leftPage #introBody{
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.rightPage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightPage .signUpForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin-top: 10px;
+    width: 300px;
+    height: 1.5rem;
+    border: none;
+}
+
+.rightPage label{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.rightPage .signUpForm #signUpTitle{
+    text-align: center;
+}
+
+.rightPage .signUpForm #findPassword{
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.rightPage .signUpForm #btnsignUp{
+    height: 2.5rem;
+    background: #2e47d9;
+    color: white;
+    cursor: pointer;
+}
+
+
+.rightPage .signUpForm #btnsignUp:active{
+    background: #1636f0;
+}

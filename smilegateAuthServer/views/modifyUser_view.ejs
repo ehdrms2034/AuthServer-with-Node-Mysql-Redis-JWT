@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileGate admin 페이지</title>
+    <link rel="stylesheet" href="/stylesheets/modifyUser_view.css"/>
+    <script rel="text/javascript" src="/javascripts/modifyUser_view.js"></script>
+</head>
+
+<body>
+<div class="header">
+    <span id="pageTitle"> 관리자 페이지 </span>
+</div>
+
+<div class="content">
+    <form action="#" id="form">
+        <div class="userForm">
+            <span class="formTitle">회원정보</span>
+            <span class="formItem"> 회원 번호: <span id="userNum"><%= id %></span></span>
+            <span class="formItem"> email : <span id="email"><%= email %></span> </span>
+            <span class="formItem"> 이름 : <input id="userName" type="text" value="<%= name %>" required></span>
+            <span class="formItem"> 회원 유형 :
+                <select id="userType">
+                    <option value="User">user</option>
+                    <option value="Admin">admin</option>
+                </select></span>
+            <span class="formItem"> 인증 여부 : <input id="verified" type="checkbox" checked <%= verified %>/> </span>
+            <span class="formItem"> 가입일 : <span id="createdAt"><%= createdAt %> </span> </span>
+            <input id="btnModify" type="submit" value="수정하기"/>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>

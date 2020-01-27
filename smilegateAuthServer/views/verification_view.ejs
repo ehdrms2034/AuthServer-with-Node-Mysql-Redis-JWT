@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileGate verification</title>
+    <link rel="stylesheet" href="/stylesheets/verification_view.css"/>
+    <script rel="text/javascript" src="/javascripts/verification_view.js"></script>
+</head>
+
+<body>
+<div class="content">
+    <div class="leftPage">
+            <span id="introTitle">
+                이메일 인증 관련 안내
+            </span>
+        <span id="introBody">
+            현재 고객님의 계정은 이메일 인증이 제대로 이루어져 있지 않습니다.  <br/>
+            서비스를 이용하시려면 이메일 인증을 통해 계정을 활성화 하십시요.<br/>
+            <br/>
+            ❕이메일이 오지 않을 경우 이메일 요청을 다시 해주세요. <br/>
+            ❕계정 활성 이메일은 요청 후 1시간 이내에 완료 해주시길 바랍니다.
+
+            </span>
+    </div>
+    <div class="rightPage">
+        <div class="contentForm">
+            <span> 요청 될 Email 주소 </span>
+            <span id="email"><%= email%></span>
+            <input type="button" class="btnBlue" id="btnReqEmail" value="이메일 요청하기"/>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+    width: 99%;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(120, 120, 120, 0.1);
+}
+
+a, a:visited{
+    color:rgba(120, 120, 120, 0.8);
+}
+
+a:active{
+    color: rgba(80, 80, 80, 0.9);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    height: 768px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.leftPage {
+    flex: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #2e48d9;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftPage #introTitle{
+    color: white;
+    font-weight: bold;
+}
+
+.leftPage #introBody{
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.rightPage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightPage .loginForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInput {
+    margin-top: 30px;
+    width: 300px;
+    height: 1.5rem;
+    border: none;
+}
+
+.rightPage label{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.rightPage .loginForm #loginTitle{
+    text-align: center;
+}
+
+.rightPage .loginForm #findPassword{
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.rightPage .loginForm #btnBlue{
+    height: 2.5rem;
+    background: #2e47d9;
+    color: white;
+    cursor: pointer;
+}
+
+
+.rightPage .loginForm #btnBlue:active{
+    background: #1636f0;
+}
